@@ -16,7 +16,7 @@ public class DuenioJpaController implements Serializable {
     private EntityManagerFactory emf = null;
 
     public DuenioJpaController() {
-        emf = Persistence.createEntityManagerFactory("ColegioPU");
+        emf = Persistence.createEntityManagerFactory("PeluCaninaPU");
     }
 
     public DuenioJpaController(EntityManagerFactory emf) {

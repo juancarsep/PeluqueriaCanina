@@ -1,5 +1,12 @@
-C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\PeluqueriaCanina\src\main\java\PeluqueriaCanina.java
-C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\PeluqueriaCanina\src\main\java\peluqueria\canina\igu\Principal.java
-C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\PeluqueriaCanina\src\main\java\peluqueria\canina\igu\CargaDatos.java
-C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\PeluqueriaCanina\src\main\java\peluqueria\canina\logica\Duenio.java
-C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\PeluqueriaCanina\src\main\java\peluqueria\canina\logica\Mascota.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\persistencia\DuenioJpaController.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\igu\Principal.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\persistencia\exceptions\IllegalOrphanException.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\logica\ControladoraLogica.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\persistencia\ControladoraPersistencia.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\igu\CargaDatos.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\logica\Mascota.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\persistencia\exceptions\NonexistentEntityException.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\persistencia\MascotaJpaController.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\PeluqueriaCanina.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\Usuario\Documents\TodoCode\POO\PeluqueriaCanina\src\main\java\peluqueria\canina\logica\Duenio.java

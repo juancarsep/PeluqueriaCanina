@@ -12,7 +12,7 @@ public class MascotaJpaController {
     private EntityManagerFactory emf = null;
 
     public MascotaJpaController() {
-        emf = Persistence.createEntityManagerFactory("ColegioPU");
+        emf = Persistence.createEntityManagerFactory("PeluCaninaPU");
     }
 
     public MascotaJpaController(EntityManagerFactory emf) {
