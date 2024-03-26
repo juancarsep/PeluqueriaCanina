@@ -7,12 +7,16 @@ PeluqueriaCanina.class
 peluqueria\canina\igu\Principal$2.class
 peluqueria\canina\persistencia\exceptions\NonexistentEntityException.class
 peluqueria\canina\logica\Mascota_.class
+peluqueria\canina\igu\VerDatos$2.class
 peluqueria\canina\logica\ControladoraLogica.class
 peluqueria\canina\persistencia\DuenioJpaController.class
+peluqueria\canina\igu\Principal$3.class
 peluqueria\canina\logica\Duenio_.class
+peluqueria\canina\igu\VerDatos$1.class
 peluqueria\canina\igu\CargaDatos$1.class
 peluqueria\canina\igu\Principal.class
 peluqueria\canina\logica\Mascota.class
 peluqueria\canina\logica\Duenio.class
 peluqueria\canina\persistencia\exceptions\PreexistingEntityException.class
+peluqueria\canina\igu\VerDatos.class
 peluqueria\canina\persistencia\ControladoraPersistencia.class
