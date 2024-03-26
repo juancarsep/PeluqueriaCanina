@@ -19,8 +19,9 @@ public class ControladoraLogica {
         masco.setAtencionEspecial(atEsp);
         masco.setObservaciones(observaciones);
         masco.setDuenio(duenio);
+        
+        controlPersis.guardar(duenio,masco);
     }
-    
     
     
 }

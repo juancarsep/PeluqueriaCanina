@@ -8,5 +8,6 @@ public class PeluqueriaCanina {
         Principal principal = new Principal();
         principal.setVisible(true);
         principal.setLocationRelativeTo(null);
+
     }
 }

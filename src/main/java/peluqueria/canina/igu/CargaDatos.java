@@ -1,6 +1,8 @@
 
 package peluqueria.canina.igu;
 
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 import peluqueria.canina.logica.ControladoraLogica;
 
 public class CargaDatos extends javax.swing.JFrame {
@@ -225,6 +227,13 @@ public class CargaDatos extends javax.swing.JFrame {
         String alergico = (String) cmbAlergico.getSelectedItem();
         String atEsp = (String) cmbAtEsp.getSelectedItem();
         control.guardar(nombreMascota,razaMascota,colorMascota,observaciones,nomDuenio,celDuenio,alergico,atEsp);
+        
+        JOptionPane pane = new JOptionPane("Datos cargados con exito");
+        pane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        JDialog dialog = pane.createDialog("Carga Exitosa");
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
+        
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
