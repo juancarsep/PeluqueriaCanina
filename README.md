@@ -35,6 +35,5 @@ This is a Java desktop application built using Swing interfaces. It allows for m
 ## Data visualization
 ![image](https://github.com/juancarsep/PeluqueriaCanina/assets/129075685/c3bf5082-ce8e-4612-8bfa-485701ef7dfb)
 
-##Data modification
+## Data modification
 ![image](https://github.com/juancarsep/PeluqueriaCanina/assets/129075685/caaeafae-d401-41ff-9abe-c5d332af3989)
-
