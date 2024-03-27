@@ -3,14 +3,19 @@ package peluqueria.canina.igu;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import peluqueria.canina.logica.ControladoraLogica;
+import peluqueria.canina.logica.Mascota;
 
-public class CargaDatos extends javax.swing.JFrame {
+public class ModificarDatos extends javax.swing.JFrame {
+
+    Mascota masco = null;
+    int numClienteAModificar;
 
     ControladoraLogica control = null;
 
-    public CargaDatos() {
+    public ModificarDatos(int numCliente) {
         control = new ControladoraLogica();
         initComponents();
+        cargarDatos(numCliente);
     }
 
     @SuppressWarnings("unchecked")
@@ -77,7 +82,7 @@ public class CargaDatos extends javax.swing.JFrame {
             }
         });
 
-        btnGuardar.setText("Guardar");
+        btnGuardar.setText("Guardar cambios");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
@@ -224,14 +229,14 @@ public class CargaDatos extends javax.swing.JFrame {
         String celDuenio = txtCelDuenio.getText();
         String alergico = (String) cmbAlergico.getSelectedItem();
         String atEsp = (String) cmbAtEsp.getSelectedItem();
-        control.guardar(nombreMascota, razaMascota, colorMascota, observaciones, nomDuenio, celDuenio, alergico, atEsp);
 
-        JOptionPane pane = new JOptionPane("Datos cargados con exito");
-        pane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
-        JDialog dialog = pane.createDialog("Carga Exitosa");
-        dialog.setAlwaysOnTop(true);
-        dialog.setVisible(true);
+        control.modificarMascota(masco, nombreMascota, razaMascota, colorMascota, observaciones, nomDuenio, celDuenio, alergico, atEsp);
 
+        mostrarMensaje("Edicion realizada correctamente", "Info", "Edicion completada");
+        this.dispose();
+        VerDatos pantalla = new VerDatos();
+        pantalla.setVisible(true);
+        pantalla.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
@@ -271,4 +276,40 @@ public class CargaDatos extends javax.swing.JFrame {
     private javax.swing.JTextArea txtObserv;
     private javax.swing.JTextField txtRaza;
     // End of variables declaration//GEN-END:variables
+
+    private void cargarDatos(int numCliente) {
+        this.masco = control.traerMascota(numCliente);
+
+        txtNombre.setText(masco.getNombre());
+        txtRaza.setText(masco.getRaza());
+        txtColor.setText(masco.getColor());
+        txtObserv.setText(masco.getObservaciones());
+        txtNomDuenio.setText(masco.getDuenio().getNombre());
+        txtCelDuenio.setText(masco.getDuenio().getCelDuenio());
+
+        if (masco.getAlergico().equals("SI")) {
+            cmbAlergico.setSelectedIndex(1);
+        } else if (masco.getAlergico().equals("NO")) {
+            cmbAlergico.setSelectedIndex(2);
+        }
+
+        if (masco.getAtencionEspecial().equals("SI")) {
+            cmbAlergico.setSelectedIndex(1);
+        } else if (masco.getAtencionEspecial().equals("NO")) {
+            cmbAlergico.setSelectedIndex(2);
+        }
+
+    }
+
+    public void mostrarMensaje(String mensaje, String tipo, String titulo) {
+        JOptionPane pane = new JOptionPane(mensaje);
+        if (tipo.equals("Info")) {
+            pane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        } else if (tipo.equals("Error")) {
+            pane.setMessageType(JOptionPane.ERROR_MESSAGE);
+        }
+        JDialog dialog = pane.createDialog(titulo);
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
+    }
 }

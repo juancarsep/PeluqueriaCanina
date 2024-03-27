@@ -5,7 +5,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import peluqueria.canina.logica.Duenio;
 
-@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2024-03-26T16:30:19", comments="EclipseLink-2.7.12.v20230209-rNA")
+@Generated(value="org.eclipse.persistence.internal.jpa.modelgen.CanonicalModelProcessor", date="2024-03-26T22:35:29", comments="EclipseLink-2.7.12.v20230209-rNA")
 @StaticMetamodel(Mascota.class)
 public class Mascota_ { 
 
